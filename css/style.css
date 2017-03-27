@@ -173,6 +173,8 @@ label{
     border: 1px solid;
     border-radius: 14px;
     font-size: 18px;
+
+
 }
 
 #gifs-appear-here{
@@ -203,4 +205,8 @@ input#add-show{
 img{
 	    border-radius: 6px;
 	    filter: grayscale(1);
+}
+h3{
+	text-align: center;
+	font-size: 12px
 }
