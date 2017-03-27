@@ -188,6 +188,7 @@ label{
 	color:black;
 	border-radius: 3px;
 	padding: 5px;
+
 }
 input#add-show{
 	border: none;
@@ -200,5 +201,6 @@ input#add-show{
 
 }
 img{
-	    border-radius: 6px
+	    border-radius: 6px;
+	    filter: grayscale(1);
 }
