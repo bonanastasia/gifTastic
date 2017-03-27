@@ -1,0 +1,205 @@
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@font-face {
+    font-family: 'abraham_lincolnregular';
+    src: url('../abrahamlincoln-webfont.woff2') format('woff2'),
+         url('../abrahamlincoln-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+ background:#000 url(../images/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("../images/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+	
+}
+
+.clouds{
+	width:10000px;
+	height: 100%;
+	background: transparent url("../images/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+
+
+
+*{
+	margin: 20px
+	padding:20px;
+}
+header{
+	font-size: 75px;
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 100%;
+    text-align: center;
+    font-family: 'abraham_lincolnregular';
+}
+
+body{
+	
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+    color:white;
+    
+}
+
+.container{
+	width: 100%;
+	z-index: 4;
+	
+	}
+
+button{
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	height: 40px;
+    margin: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    transform: all 0.2s ease-in-out;
+
+}
+button:hover {
+ 
+ box-shadow: 0 4px 40px rgba(118, 203, 245, 0.75);
+
+}
+button:focus {
+
+ outline: none;
+ box-shadow: 0 4px 40px rgba(118, 203, 245, 0.75);
+
+}
+#show-input{
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+    color: white;
+    font-size: 12px;
+}
+label{
+	font-size: 18px;
+}
+#show-form{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 118px;
+    width: 30%;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.28);
+    /* border: white; */
+    border: 1px solid;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+#gifs-appear-here{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item{
+	margin: 10px;
+}
+.item p{
+	background-color: white;
+	color:black;
+	border-radius: 3px;
+	padding: 5px;
+}
+input#add-show{
+	border: none;
+    border-radius: 3px;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    width: 50px;
+
+}
+img{
+	    border-radius: 6px
+}
